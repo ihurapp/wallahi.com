@@ -51,6 +51,17 @@
             font-weight: normal;
         }
 
+        /* Centered "Wallahi" with trademark */
+        .center-footer {
+            font-size: 60px; /* Adjust size as needed */
+            font-weight: normal;
+            color: #fff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family: 'League Spartan', sans-serif;
+        }
+
         /* Centered YouTube video */
         .youtube-video {
             flex: 1;
@@ -103,14 +114,22 @@
             .footer-right {
                 font-size: 12px; /* Smaller text on mobile */
             }
+
+            .center-footer {
+                font-size: 50px; /* Smaller font size for mobile */
+            }
         }
     </style>
 </head>
 <body>
     <!-- White footer at the top -->
     <div class="top-footer">
+        <div class="footer-right">owned and managed by iNematJ</div>
+    </div>
+
+    <!-- Centered Wallahi with trademark in the middle -->
+    <div class="center-footer">
         Wallahi<span class="trademark">&reg;</span>
-        <div class="footer-right">iNematJ</div>
     </div>
 
     <!-- Centered YouTube video -->
