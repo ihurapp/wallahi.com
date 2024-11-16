@@ -54,23 +54,12 @@
             max-width: 800px;
             padding: 20px;
             margin-top: 80px; /* Space above the YouTube video for larger screens */
-            position: relative; /* To position the text over the video */
         }
 
         iframe {
             width: 100%;
             height: 450px;
             border: none;
-        }
-
-        /* Text on the right side */
-        .top-right-text {
-            font-size: 14px;
-            color: #fff; /* White text */
-            position: absolute;
-            top: 20px; /* Adjust distance from top */
-            right: 20px; /* Position text on the right side */
-            z-index: 1000; /* Keep it above other elements */
         }
 
         /* Large font for "Wallahi" at the bottom */
@@ -99,12 +88,6 @@
                 margin-top: 20px; /* Reduced space above the video on mobile */
             }
 
-            .top-right-text {
-                font-size: 12px; /* Smaller font size on mobile */
-                right: 10px; /* Reduce space on mobile */
-                top: 10px; /* Adjust space from top */
-            }
-
             .big-footer {
                 font-size: 80px;
                 margin-bottom: 20px; /* Reduced space below the footer text on mobile */
@@ -126,9 +109,6 @@
             allow="autoplay; encrypted-media"
             allowfullscreen>
         </iframe>
-
-        <!-- Top right text -->
-        <div class="top-right-text">Owned and managed by iNematJ</div>
     </div>
 
     <!-- Large "Wallahi" text at the bottom -->
