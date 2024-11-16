@@ -44,20 +44,17 @@
             margin-left: 2px;
         }
 
-        /* Container for video and text */
-        .video-container {
+        /* Centered YouTube video */
+        .youtube-video {
+            flex: 1;
             display: flex;
             justify-content: center;
             align-items: center;
             width: 100%;
-            max-width: 1200px;
+            max-width: 800px;
             padding: 20px;
-            margin-top: 80px; /* Space above the video for larger screens */
-        }
-
-        /* Centered YouTube video */
-        .youtube-video {
-            width: 75%; /* Adjust width of video */
+            margin-top: 80px; /* Space above the YouTube video for larger screens */
+            position: relative; /* To position the text over the video */
         }
 
         iframe {
@@ -70,7 +67,9 @@
         .top-right-text {
             font-size: 14px;
             color: #fff; /* White text */
-            margin-left: 20px; /* Space between video and text */
+            position: absolute;
+            top: 20px; /* Adjust distance from top */
+            right: 20px; /* Position text on the right side */
             z-index: 1000; /* Keep it above other elements */
         }
 
@@ -96,19 +95,14 @@
                 height: 250px;
             }
 
-            .video-container {
-                flex-direction: column; /* Stack video and text on mobile */
-                margin-top: 20px;
-            }
-
             .youtube-video {
-                width: 100%; /* Full width on mobile */
+                margin-top: 20px; /* Reduced space above the video on mobile */
             }
 
             .top-right-text {
                 font-size: 12px; /* Smaller font size on mobile */
-                margin-left: 0; /* Remove space between video and text on mobile */
-                margin-top: 10px; /* Add space between video and text on mobile */
+                right: 10px; /* Reduce space on mobile */
+                top: 10px; /* Adjust space from top */
             }
 
             .big-footer {
@@ -124,17 +118,14 @@
        Wallahi<span class="trademark">&reg;</span>
     </div>
 
-    <!-- Video and text container -->
-    <div class="video-container">
-        <!-- Centered YouTube video -->
-        <div class="youtube-video">
-            <iframe 
-                id="youtube-iframe"
-                src=""
-                allow="autoplay; encrypted-media"
-                allowfullscreen>
-            </iframe>
-        </div>
+    <!-- Centered YouTube video -->
+    <div class="youtube-video">
+        <iframe 
+            id="youtube-iframe"
+            src=""
+            allow="autoplay; encrypted-media"
+            allowfullscreen>
+        </iframe>
 
         <!-- Top right text -->
         <div class="top-right-text">Owned and managed by iNematJ</div>
