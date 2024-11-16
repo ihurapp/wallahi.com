@@ -17,6 +17,7 @@
             display: flex;
             justify-content: center;
             align-items: center;
+            flex-direction: column;
             position: relative;
             overflow-x: hidden;
         }
@@ -28,31 +29,40 @@
             position: fixed;
             top: 0;
             width: 100%;
-            height: 60px; /* Adjust height as needed */
+            height: 60px;
             display: flex;
             align-items: center;
             justify-content: center;
-            font-size: 24px; /* Adjusted font size */
+            font-size: 24px;
             font-weight: bold;
-            z-index: 1000; /* Keep it above other elements */
+            z-index: 1000;
         }
 
         .top-footer .trademark {
-            font-size: 18px; /* Smaller trademark size */
+            font-size: 18px;
             vertical-align: super;
             margin-left: 2px;
         }
 
-        /* Centered quote text */
-        .center-quote {
-            font-size: 36px; /* Adjust the size as needed */
-            text-align: center;
-            padding: 0 20px; /* Add some padding for mobile responsiveness */
+        /* Centered YouTube video */
+        .youtube-video {
+            margin: 20px 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 80%; /* Adjust width as needed */
+            max-width: 800px;
+        }
+
+        iframe {
+            width: 100%;
+            height: 450px;
+            border: none;
         }
 
         /* Large font for "Wallahi" at the bottom */
         .big-footer {
-            font-size: 300px; /* Large size for impactful look */
+            font-size: 300px;
             font-weight: normal;
             color: #fff;
             position: fixed;
@@ -69,11 +79,11 @@
         /* Mobile-specific styles */
         @media (max-width: 767px) {
             .top-footer {
-                font-size: 18px; /* Smaller font on mobile */
+                font-size: 18px;
             }
 
-            .center-quote {
-                font-size: 20px; /* Smaller font size for mobile screens */
+            iframe {
+                height: 250px;
             }
 
             .big-footer {
@@ -83,17 +93,19 @@
     </style>
 </head>
 <body>
-    <!-- White footer at the top -->
     <div class="top-footer">
-       Wallahi<span class="trademark">&reg;</span>
+        Wallahi<span class="trademark">&reg;</span>
     </div>
 
-    <!-- Centered quote text -->
-    <div class="center-quote">
-       Ya Allah - Ya Muhammed - Ya Ali
+    <!-- Centered YouTube video -->
+    <div class="youtube-video">
+        <iframe 
+            src="https://www.youtube.com/embed/-qm98i3lDKs?autoplay=1&loop=1&playlist=-qm98i3lDKs" 
+            allow="autoplay; encrypted-media" 
+            allowfullscreen>
+        </iframe>
     </div>
 
-    <!-- Large "Wallahi" text at the bottom -->
     <div class="big-footer">Wallahi</div>
 </body>
 </html>
