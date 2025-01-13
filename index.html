@@ -62,16 +62,17 @@
             border: none;
         }
 
-        /* Large font for "Wallahi" at the bottom */
+        /* Footer for questions */
         .big-footer {
-            font-size: 20px; /* Large size for impactful look */
+            font-size: 18px; /* Adjust font size for questions */
             font-weight: normal;
             color: #fff;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            font-family: 'League Spartan', sans-serif;
-            margin-bottom: 40px; /* Space between footer text and bottom of the screen */
+            text-align: left; /* Align text to the left */
+            padding: 20px;
+            line-height: 1.8; /* Increase line height for better readability */
+            margin-bottom: 40px;
+            width: 90%;
+            max-width: 800px;
         }
 
         /* Mobile-specific styles */
@@ -89,7 +90,7 @@
             }
 
             .big-footer {
-                font-size: 60px;
+                font-size: 16px; /* Smaller question text on mobile */
                 margin-bottom: 20px; /* Reduced space below the footer text on mobile */
             }
         }
@@ -111,16 +112,14 @@
         </iframe>
     </div>
 
-    <!-- Large "Wallahi" text at the bottom -->
-<div class="big-footer">
-
-1. **Is the name "wallahi.com" memorable to you? Why or why not?**  
-2. **If you didn’t know what wallahi.com was, what type of platform would you expect it to be?**  
-3. **We are considering using wallahi.com as a matrimony platform for Muslims. What do you think about this idea?**  
-4. **What features or services would you want to see on a Muslim matrimonial website to make your experience better?**  
-5. **Do you have any other feedback, ideas, or suggestions that could help us create a valuable platform on wallahi.com?**  
-
-</div>
+    <!-- Questions in separate lines -->
+    <div class="big-footer">
+        <p>1. <strong>Is the name "wallahi.com" memorable to you? Why or why not?</strong></p>
+        <p>2. <strong>If you didn’t know what wallahi.com was, what type of platform would you expect it to be?</strong></p>
+        <p>3. <strong>We are considering using wallahi.com as a matrimony platform for Muslims. What do you think about this idea?</strong></p>
+        <p>4. <strong>What features or services would you want to see on a Muslim matrimonial website to make your experience better?</strong></p>
+        <p>5. <strong>Do you have any other feedback, ideas, or suggestions that could help us create a valuable platform on wallahi.com?</strong></p>
+    </div>
 
     <script>
         // Easily change the video URL here
